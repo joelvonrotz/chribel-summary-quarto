@@ -1,0 +1,44 @@
+\fancyhf{} % clear all header and footer fields
+% header
+$if(fancyhdr.header.right)$
+\fancyhead[R]{\sffamily $fancyhdr.header.right$}
+$endif$
+
+$if(fancyhdr.header.center)$
+\fancyhead[C]{\sffamily $fancyhdr.header.center$}
+$endif$
+
+$if(fancyhdr.header.left)$
+\fancyhead[L]{\sffamily $fancyhdr.header.left$}
+$endif$
+
+% header
+$if(fancyhdr.footer.right)$
+\fancyfoot[R]{\sffamily $fancyhdr.footer.right$}
+$endif$
+
+$if(fancyhdr.footer.center)$
+\fancyfoot[C]{\sffamily $fancyhdr.footer.center$}
+$endif$
+
+$if(fancyhdr.footer.left)$
+\fancyfoot[L]{\sffamily $fancyhdr.footer.left$}
+$endif$
+
+\makeatletter
+\begin{center}
+  \vspace*{0.5cm}
+  \textbf{\textsf{\Huge $title$}}\\
+  \vspace{0.1cm}
+  \textsf{\textit{\large $subtitle$}}\\
+  \vspace{0.5cm}
+  \textsf{\large $author$ \hspace{0.3cm}\textbf{/}\hspace{0.3cm}\mbox{\large \faGithub\space \href{$source.github$}{Quelldateien}}}
+\end{center}
+\makeatother
+\normalfont
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
