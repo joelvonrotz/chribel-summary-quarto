@@ -8,7 +8,7 @@ A quarto template, which can be used to write course summaries. It uses `pdflate
 > *Chribel* means doodle or scribbe in Swiss German. It has no meaning whatsoever, just sounds silly :)
 
 > [!WARNING]
-> This is not a definitive version of the template and still has a bunch of stuff which requires special attention, such as font changing. If time is sufficient I might turn some of the $\LaTeX$ components into Quarto properties.
+> This is not a definitive version of the template and still has a bunch of stuff which requires special attention. If time is sufficient I might turn some of the $\LaTeX$ components into Quarto properties.
 
 ## Creating a New Document
 

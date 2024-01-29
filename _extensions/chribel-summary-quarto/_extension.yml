@@ -1,6 +1,6 @@
 title: Chribel Summary Quarto
 author: Joel von Rotz
-version: 1.0.0
+version: 1.1.0
 quarto-required: ">=1.4.0"
 contributes:
   project:
