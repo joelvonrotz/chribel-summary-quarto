@@ -27,9 +27,17 @@ fancyhdr:
     right: "Monkey Course"
     center: "\\thepage\\ / \\pageref{LastPage}"
     left: "\\today"
-
+  
 source:
   github: "https://www.youtube.com/watch?v=VGhcSupkNs8"
+
+accentcolor: "124E82" # must be given as hex, sadly :(
+
+chribel-fontfamily:
+  - name: AlegreyaSans      # used for section headings, title page
+  - name: cmbright          # used for paragraph and math
+  - name: inconsolata
+    options: "scaled=0.95"  # for code blocks
 ---
 
 ```{=latex}
@@ -46,13 +54,16 @@ format:
     toc: true
     classoption: twocolumn
 
+# [DOCUMENT INFORMATION]
 title: "A Summary Title"
 subtitle: "Summary"
 author: "Me, the cool author blablablablablabla"
 
+# [PAGE OPTIONS]
 lang: de-CH
 babel-lang: nswissgerman
 
+# [HEADER & FOOTER]
 fancyhdr:
   header:
     right: "You're reading a summary"
@@ -62,7 +73,15 @@ fancyhdr:
     right: "Monkey Course"
     center: "\\thepage\\ / \\pageref{LastPage}"
     left: "\\today"
-
+  
 source:
   github: "https://www.youtube.com/watch?v=VGhcSupkNs8"
+
+accentcolor: "124E82" # must be given as hex, sadly :(
+
+chribel-fontfamily:
+  - name: AlegreyaSans      # used for section headings, title page
+  - name: cmbright          # used for paragraph and math
+  - name: inconsolata
+    options: "scaled=0.95"  # for code blocks
 ```

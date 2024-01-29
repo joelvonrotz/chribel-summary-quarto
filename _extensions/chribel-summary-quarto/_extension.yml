@@ -23,12 +23,13 @@ contributes:
       pagenumbering: none
 
       # [DOCUMENT STRUCTURES]
-      include-in-header:
-        - config/preamble.tex
       include-before-body: 
         - config/before-content.tex
+      include-in-header:
+        - config/preamble.tex
       template-partials:
         - partials/before-body.tex
+        - partials/before-title.tex
       
       # [TOC OPTIONS]
       toc: true
