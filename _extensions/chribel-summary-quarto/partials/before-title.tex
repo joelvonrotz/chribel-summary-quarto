@@ -1,5 +1,5 @@
 
-% [GENERAL PACKAGES] ---------------------------------------------------------------------
+% [GENERAL PACKAGES] ------------------------------------------------------------------- %
 % includes some neato math environments, symbols and stuff
 \usepackage{amssymb, amsmath}
 
@@ -25,7 +25,7 @@
 % Depending on the type of document, mostly summaries, I remove the spacing Display-styled Equations insert, since it's a waste of space.
 \usepackage[nodisplayskipstretch]{setspace}
 
-% [FONT CONFIGURATION] -------------------------------------------------------------------
+% [FONT CONFIGURATION] ----------------------------------------------------------------- %
 % change the fonts here (depending which latex engine is used, this might need to be
 % removed)
 
@@ -37,11 +37,11 @@ $else$
 $endif$
 $endfor$
 
-\usepackage{AlegreyaSans}
-\usepackage{cmbright}
-\usepackage[scaled=0.95]{inconsolata} % for code blocks
+% \usepackage{AlegreyaSans}
+% \usepackage{cmbright}
+% \usepackage[scaled=0.95]{inconsolata} % for code blocks
 
-% [TIKZ CONFIGURATION] -------------------------------------------------------------------
+% [TIKZ CONFIGURATION] ----------------------------------------------------------------- %
 % Tikz is really good at creating nice looking and clean drawings, diagramms, etc. 
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,arrows.meta,matrix,decorations.pathmorphing}
@@ -50,7 +50,7 @@ $endfor$
 
 % TIP: use 'TikzEdt' (http://www.tikzedt.org/) to preview the drawings.
 
-% [HEADING/SECTION STYLE CONFIGURATION] --------------------------------------------------
+% [HEADING/SECTION STYLE CONFIGURATION] ------------------------------------------------ %
 % 'sectsty' is used for minor adjustments and is used to apply the bold sans serif style
 % to all sections (sec, subsec, subsubsec, ...)
 \usepackage{sectsty}
@@ -138,7 +138,7 @@ $endfor$
     #1%
   }% {⟨before-code⟩}
 
-% [HEADER & FOOTER CONFIGURATION] --------------------------------------------------------
+% [HEADER & FOOTER CONFIGURATION] ------------------------------------------------------ %
 % Most configuration is done through the quarto project yaml file (aka. '_quarto.yml').
 % 
 % Inside '_quarto.yml' use following structure. If one is not used, uncomment it:
@@ -191,7 +191,7 @@ $if(fancyhdr.footer.left)$
 \fancyfoot[L]{\sffamily $fancyhdr.footer.left$}
 $endif$
 
-% [CONDITIONS ENVIRONMENT] ---------------------------------------------------------------
+% [CONDITIONS ENVIRONMENT] ------------------------------------------------------------- %
 % introduces conditions environment to create nice equation parameter description
 % note: the first column is already in math mode, so no $$ are required.
 %
@@ -206,7 +206,7 @@ $endif$
   {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$$}l<{$$} @{$${}:{}$$} l}}
   {\end{tabular}\par\vspace{\belowdisplayskip}}
 
-% [FANCY VERBATIM] -----------------------------------------------------------------------
+% [FANCY VERBATIM] --------------------------------------------------------------------- %
 % in combination with the file 'before-content.tex' inside the 'config' folder, the
 % packages 'fancyvbr', 'fvextra' and 'floatrow' are used to restyle the implemented
 % Verbatim/Codeblock styles to make it (personally) nicer looking and include breaklines +
@@ -239,8 +239,8 @@ $endif$
     captionskip=1pt
   }
 
-% [MISC] ---------------------------------------------------------------------------------
+% [MISC] ------------------------------------------------------------------------------- %
 
 
-% ----------------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------- %
 

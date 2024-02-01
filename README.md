@@ -137,14 +137,24 @@ fancyhdr:
 
 ### Date Format
 
-> [!CAUTION]
-> Changing the date format is a bit finicky, but it is possible. Following example sets the date format to 'DD.MM.YYYY'.
->
-> ```latex
-> \usepackage[datesep=.]{datetime2}
-> \DTMsetdatestyle{ddmmyyyy}
-> ```
->
+Changing the date format is a bit finicky, but it is possible. Following example sets the date format to 'DD.MM.YYYY'.
+
+```latex
+\usepackage[datesep=.]{datetime2}
+\DTMsetdatestyle{ddmmyyyy}
+```
+
+or in the project YAML or document frontmatter
+
+```yaml
+format:
+  chribel-academic-quarto-pdf:
+    include-in-header:
+    - text: "\\usepackage[datesep=.]{datetime2}"
+    - text: "\\DTMsetdatestyle{ddmmyyyy}"
+```
+
+> [!IMPORTANT]
 > `\today` needs to be replaced with `\DTMtoday` in the document.
 
 ### Github Link
