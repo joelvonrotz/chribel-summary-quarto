@@ -10,6 +10,16 @@ A quarto template, which can be used to write course summaries. It uses `pdflate
 > [!WARNING]
 > This is not a definitive version of the template and still has a bunch of stuff which requires special attention. If time is sufficient I might turn some of the $\LaTeX$ components into Quarto properties.
 
+## Installing LaTeX
+
+As it is a pdf document, it requires LaTeX. A smaller version of LaTeX called TinyTex can be installed via the documentation page [Quarto - Installing TeX](https://quarto.org/docs/output-formats/pdf-engine.html#installing-tex) or via following command:
+
+```bash
+quarto install tinytex --update-path
+```
+
+`--update-path` is used, so other tools can also use this latex distribution!
+
 ## Creating a New Document
 
 To create a new document using this format, use the `use` quarto command in the terminal.
